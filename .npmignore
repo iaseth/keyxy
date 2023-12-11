@@ -1,0 +1,13 @@
+
+names/
+src/
+demo/
+res/
+
+data/
+docs/
+examples/
+tests/
+
+Makefile
+*.md.rx
