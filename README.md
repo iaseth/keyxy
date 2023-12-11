@@ -1,37 +1,34 @@
 
-# Timenames
-Timenames provides you with a unique name for each second of the day.
-You can see a demo [here](https://timenames.redpapr.com/).
+# keyxy
+`keyxy` provides you with the XY co-ordinates for any key on the keyboard.
+You can see a demo [here](https://keyxy.redpapr.com/).
 
 I am using [`readmix`](https://github.com/iaseth/readmix) for generating this README.
-You can view the source file [here](https://github.com/iaseth/timenames/blob/master/README.md.rx).
+You can view the source file [here](https://github.com/iaseth/keyxy/blob/master/README.md.rx).
 
 
 ## How it started
-I was working of a [sound recorder app](https://github.com/iaseth/rex)
-that gave a default filename to each recording based on the current time.
-I extracted the naming logic into a separate npm package called
-[timenames](https://www.npmjs.com/package/timenames) and added a
-[demo react app](https://timenames.redpapr.com/) for previewing.
+I was working on a [sound synthesizer app](https://github.com/iaseth/audiola)
+that played a sound depending on the co-ordinates of the key pressed.
+I extracted the key detection logic into a separate npm package called
+[keyxy](https://www.npmjs.com/package/keyxy) and added a
+[demo react app](https://keyxy.redpapr.com/) for previewing.
 
 
-![Timenames Demo](res/one-minute-demo.gif)
-
-
-## How to use timenames in your project
-Install the [`timenames`](https://www.npmjs.com/package/timenames) npm package:
+## How to use keyxy in your project
+Install the [`keyxy`](https://www.npmjs.com/package/keyxy) npm package:
 ```
-npm install timenames
+npm install keyxy
 ```
 
-Import the `getTimeName()` function:
+Import the `getXY()` function:
 ```
-import { getTimeName } from 'timenames';
+import { getXY } from "keyxy";
 ```
 
-Call the `getTimeName()` function with the current time to get a `timename`:
+Call the `getXY()` function with the key name to get a `timename`:
 ```
-const timename = getTimeName(Date.now());
+const { x, y } = getTimeName(key);
 ```
 
 
