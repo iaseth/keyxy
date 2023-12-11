@@ -1,6 +1,6 @@
 {
   "name": "keyxy",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A lightweight npm package to get the XY coordinates of a Key.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
